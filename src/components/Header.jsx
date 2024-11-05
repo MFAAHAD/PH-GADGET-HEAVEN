@@ -29,7 +29,7 @@ const Header = () => {
   return (
     <div className={` ${isHome ? "pt-8" : "w-full mt-5"}`}>
       <div
-        className={`navbar w-[90%] mx-auto ${isHome ? "bg-[#9538E2] rounded-t-3xl" : "bg-base-100 w-[100%] pt-0"
+        className={`navbar w-[90%] mx-auto ${isHome ? "bg-[#9538E2] rounded-t-3xl text-white" : "bg-base-100 w-full text-[#9538E2] pt-0"
           }`}
       >
         <div className="navbar-start">
@@ -83,7 +83,7 @@ const Header = () => {
                   to="/whatsNew"
                   className={`text-lg ${isLatest ? "underline" : ""}`}
                 >
-                  New Relase
+                 Top Picks
                 </NavLink>
               </li>
             </ul>
@@ -118,7 +118,7 @@ const Header = () => {
                 to="/whatsNew"
                 className={`text-lg ${isLatest ? "underline" : ""}`}
               >
-                New Relase
+                Top Picks
               </NavLink>
             </li>
           </ul>

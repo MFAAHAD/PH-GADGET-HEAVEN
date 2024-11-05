@@ -20,7 +20,7 @@ const CardBox = () => {
     <>
       <h1 className="text-4xl text-center">Explore Cutting-Edge Gadgets</h1>
       <div className="flex flex-col md:flex-row justify-around w-[80%] mx-auto rounded-3xl my-10 gap-4">
-        <div className="flex flex-col gap-4 p-4 bg-white rounded-xl h-full"> 
+        <div className="flex flex-col gap-4 p-4 bg-white rounded-xl h-full space-y-4 "> 
           <button
             className={`btn rounded-full ${
               selectedCategory === "All" ? "bg-[#9538E2] text-white " : ""

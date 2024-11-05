@@ -3,6 +3,7 @@ import { useLoaderData, useNavigate } from "react-router-dom";
 import { getCartList, setCartList } from "../utils/addToCart";
 import { getFavList, setFavList } from "../utils/addToFav";
 import { Helmet } from "react-helmet";
+import paymentImg from '../assets/Group.png';
 
 const DashBoard = () => {
   const [showCart, setShowCart] = useState(true);
@@ -206,7 +207,7 @@ const DashBoard = () => {
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
           <div className="bg-white p-8 rounded-lg shadow-lg max-w-sm text-center">
             <div className="flex justify-center">
-              <img src="/group.png" alt="" />
+              <img src={paymentImg} alt="" />
             </div>
             <h2 className="text-2xl font-semibold mb-4">Payment Successfull</h2>
             <p className="text-lg mb-4">

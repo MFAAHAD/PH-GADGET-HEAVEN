@@ -1,129 +1,94 @@
 import React from "react";
 import { Helmet } from "react-helmet";
 
-const reviews = [
+const topPicks = [
   {
     id: "1",
-    title: "Smartphone Alpha Pro Review",
-    image:
-      "https://i.ibb.co.com/Sf5BH3J/Apple-i-Phone-16-Pro-hero-geo-240909-inline-jpg-large.jpg",
-    category: "Smartphones",
-    price: 799.99,
-    description:
-      "A powerful smartphone with a stunning OLED display and fast performance.",
-    specifications: [
-      "6.7-inch OLED display",
-      "128GB storage",
-      "Quad camera",
-      "5G connectivity",
-    ],
-    review:
-      "The Smartphone Alpha Pro is a flagship device that excels in performance and display quality. With its vibrant 6.7-inch OLED screen, every photo and video comes to life. The quad-camera system offers versatility, capturing stunning images in various conditions. Whether you're streaming your favorite shows or gaming on the go, this smartphone delivers an exceptional experience.",
-    pros: ["Stunning display", "Excellent camera quality", "Fast performance"],
-    cons: ["Pricey compared to competitors", "Battery life could be better"],
-    rating: 4.4,
+    title: "Smart Home Assistant",
+    image: "https://i.ibb.co.com/gPgH8GH/bigstock-Smart-Home-Assistant-Device-V-310936552-1024x470.jpg",
+    category: "Smart Home",
+    price: 129.99,
+    description: "Control your home with ease using voice-activated commands.",
+    features: ["Voice control", "Home automation", "Compact design", "Wi-Fi enabled"],
+    rating: 4.7,
   },
   {
     id: "2",
-    title: "Bluetooth Speaker BeatBox Review",
-    image:
-      "https://i.ibb.co/cr6PZKp/image-photograph-pair-hifi-level-music-speakers-with-two-speakers-black-background-88135-33694.jpg",
-    category: "Audio Devices",
-    price: 99.99,
-    description:
-      "Portable Bluetooth speaker with deep bass and long battery life.",
-    specifications: [
-      "Bluetooth 5.0",
-      "Battery life: 10 hours",
-      "Water resistant",
-    ],
-    review:
-      "The BeatBox Bluetooth Speaker is the ultimate portable audio solution. With powerful sound quality and deep bass, it’s perfect for parties or relaxing at home. The 10-hour battery life ensures your music never stops, and its water-resistant design makes it a great companion for outdoor adventures. If you're looking for an affordable speaker that doesn't compromise on sound quality, the BeatBox is a fantastic choice.",
-    pros: [
-      "Great sound quality",
-      "Long battery life",
-      "Portable and lightweight",
-    ],
-    cons: ["Bass can be overwhelming at times", "Limited EQ options"],
-    rating: 4.3,
+    title: "Portable Solar Charger",
+    image: "https://i.ibb.co.com/Qv61yXy/14c5899b5735302086b98de963b9c12d-jpg-960x960q80-jpg.webp",
+    category: "Outdoor Tech",
+    price: 49.99,
+    description: "Charge your devices anywhere with this eco-friendly solar charger.",
+    features: ["High-efficiency solar ", "USB ports", "Lightweight", "Water-resistant"],
+    rating: 4.5,
   },
   {
     id: "3",
-    title: "Smartphone Beta Lite Review",
-    image:
-      "https://i.ibb.co.com/sWv9D3s/galaxy-s24-ultra-highlights-camera-overview-mo.jpg",
-    category: "Smartphones",
-    price: 599.99,
-    description:
-      "A compact smartphone with high-resolution camera and long battery life.",
-    specifications: [
-      "5.8-inch LCD display",
-      "64GB storage",
-      "Dual camera",
-      "4G connectivity",
-    ],
-    review:
-      "The Smartphone Beta Lite offers a perfect balance of performance and value. With its compact 5.8-inch display and impressive dual camera setup, it’s ideal for anyone who wants a smartphone that fits easily in their pocket but doesn't skimp on features. The long battery life ensures you can stay connected throughout the day. For those looking for an affordable yet capable device, the Beta Lite is worth considering.",
-    pros: ["Compact design", "Good camera performance", "Affordable"],
-    cons: [
-      "Lower resolution display compared to rivals",
-      "Limited storage options",
-    ],
-    rating: 4.5,
+    title: "Gaming Headset Ultra",
+    image: "https://i.ibb.co.com/Yt3bsNY/steelseries-arctis-7-gaming-headset-1-1592937320.jpg",
+    category: "Gaming Accessories",
+    price: 89.99,
+    description: "Immerse yourself in sound with this high-quality gaming headset.",
+    features: ["Surround sound", "Noise-canceling mic", "Adjustable fit", "RGB lighting"],
+    rating: 4.6,
+  },
+  {
+    id: "4",
+    title: "Wireless Charging Pad",
+    image: "https://i.ibb.co.com/ZgcrXgx/anker-315-wireless-charger.webp",
+    category: "Mobile Accessories",
+    price: 29.99,
+    description: "Effortlessly charge your phone with this sleek wireless pad.",
+    features: ["Fast charging", "Non-slip design", "LED indicator", "Lightweight"],
+    rating: 4.4,
   },
 ];
 
-const WhatsNew = () => {
+const TopPicks = () => {
   return (
     <>
       <Helmet>
-        <title>What's New || Gadget Heaven</title>
+        <title>Top Picks || Gadget Heaven</title>
       </Helmet>
-      <div className="bg-[#9538E2] p-12">
-        <h1 className="text-5xl text-center text-white">Tech Talks</h1>
-        <p className="text-center text-xl text-white">
-          Learn About the Latest Gadgets in the and buy them in one place!
+      <div className="bg-[#9538E2] p-10">
+        <h1 className="text-4xl text-center text-white font-bold">Top Picks</h1>
+        <p className="text-center text-lg text-white mt-2">
+          Discover our top-rated gadgets handpicked just for you.
         </p>
       </div>
-      <div className="container mx-auto p-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {reviews.map((review) => (
+      <div className="container mx-auto py-8 px-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          {topPicks.map((product) => (
             <div
-              key={review.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden"
+              key={product.id}
+              className="bg-white rounded-lg shadow-lg hover:shadow-2xl transition-shadow duration-300 ease-in-out h-full flex flex-col"
             >
               <img
-                src={review.image}
-                alt={review.title}
-                className="w-full h-48 object-cover"
+                src={product.image}
+                alt={product.title}
+                className="w-full h-48 object-cover rounded-t-lg"
               />
-              <div className="p-4">
-                <h2 className="text-xl font-semibold mb-2">{review.title}</h2>
-                <p className="text-gray-600 mb-2">{review.description}</p>
-                <p className="text-lg font-bold mb-2">
-                  ${review.price.toFixed(2)}
+              <div className="p-6 flex flex-col flex-grow">
+                <h2 className="text-xl font-semibold text-gray-800">{product.title}</h2>
+                <p className="text-sm text-gray-600 mb-3 flex-grow">{product.description}</p>
+                <p className="text-lg font-bold text-blue-600 mb-4">
+                  ${product.price.toFixed(2)}
                 </p>
-                <p className="text-gray-500">Rating: {review.rating}</p>
-                <h3 className="font-semibold mt-4">Specifications:</h3>
-                <ul className="list-disc list-inside text-gray-700 mb-2">
-                  {review.specifications.map((spec, index) => (
-                    <li key={index}>{spec}</li>
+                <div className="flex items-center mb-4">
+                  <span className="bg-yellow-400 text-gray-900 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded">
+                    {product.rating} ★
+                  </span>
+                  <p className="text-gray-500 text-xs">Rating</p>
+                </div>
+                <h3 className="text-md font-medium mb-2">Features:</h3>
+                <ul className="list-disc list-inside text-gray-700 space-y-1 mb-4">
+                  {product.features.map((feature, index) => (
+                    <li key={index}>{feature}</li>
                   ))}
                 </ul>
-                <h3 className="font-semibold mt-4">Review:</h3>
-                <p className="text-gray-700 mb-2">{review.review}</p>
-                <h3 className="font-semibold mt-4">Pros:</h3>
-                <ul className="list-disc list-inside text-gray-700 mb-2">
-                  {review.pros.map((pro, index) => (
-                    <li key={index}>{pro}</li>
-                  ))}
-                </ul>
-                <h3 className="font-semibold mt-4">Cons:</h3>
-                <ul className="list-disc list-inside text-gray-700 mb-2">
-                  {review.cons.map((con, index) => (
-                    <li key={index}>{con}</li>
-                  ))}
-                </ul>
+                <a className="link link-hover"><button className="mt-auto w-full py-2 bg-[#9538E2] text-white font-semibold rounded-lg hover:bg-blue-700">
+                  Learn More
+                </button> </a>
               </div>
             </div>
           ))}
@@ -133,4 +98,4 @@ const WhatsNew = () => {
   );
 };
 
-export default WhatsNew;
+export default TopPicks;

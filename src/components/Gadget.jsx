@@ -14,8 +14,8 @@ const Gadget = ({ gadget }) => {
           />
         </div>
         <div className="card-body">
-          <h2 className="card-title">{category}</h2>
-          <h1 className="text-lg">{title}</h1>
+          <h2 className="card-title">{title}</h2>
+          {/* <h1 className="text-lg">{title}</h1> */}
           <p>Price: ${price}</p>
           <div className="card-actions">
             <Link to={`gadget/${id}`}>
