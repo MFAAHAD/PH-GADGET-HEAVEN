@@ -89,7 +89,7 @@ const TopPicks = () => {
                   onClick={() => openModal(product)}
                   className="mt-auto w-full py-2 bg-[#9538E2] text-white font-semibold rounded-lg hover:bg-green-500"
                 >
-                  Learn More
+                  View Details
                 </button>
               </div>
             </div>
