@@ -10,7 +10,7 @@ const ErrorPage = () => {
         <title>Error || Gadget Haven</title>
       </Helmet>
       <div className="max-w-3xl mx-auto text-center">
-        <h1 className="text-5xl font-bold text-white mb-4">ERROR</h1>
+        <h1 className="text-5xl font-bold text-white mb-4">404 ! ERROR</h1>
         <p className="text-lg text-white mb-6">PAGE NOT FOUND!</p>
         <button
           onClick={() => navigate("/")}

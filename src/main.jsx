@@ -38,7 +38,7 @@ const router = createBrowserRouter([
         loader: () => fetch("/gadgets.json"),
       },
       {
-        path: "/whatsNew",
+        path: "/toppicks",
         element: <WhatsNew />,
       },
     ],

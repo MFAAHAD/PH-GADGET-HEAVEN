@@ -10,7 +10,7 @@ const Header = () => {
   const isHome = location.pathname === "/";
   const isStatistics = location.pathname === "/statistics";
   const isDashboard = location.pathname === "/dashboard";
-  const isLatest = location.pathname === "/whatsNew";
+  const isLatest = location.pathname === "/toppicks";
 
   const inCart = getCartList();
   const cartLength = inCart.length;
@@ -115,7 +115,7 @@ const Header = () => {
             </li>
             <li>
               <NavLink
-                to="/whatsNew"
+                to="/toppicks"
                 className={`text-lg ${isLatest ? "underline" : ""}`}
               >
                 Top Picks

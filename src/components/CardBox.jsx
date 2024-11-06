@@ -20,7 +20,7 @@ const CardBox = () => {
     <>
       <h1 className="text-4xl text-center">Explore Cutting-Edge Gadgets</h1>
       <div className="flex flex-col md:flex-row justify-around w-[80%] mx-auto rounded-3xl my-10 gap-4">
-        <div className="flex flex-col gap-4 p-4 bg-white rounded-xl h-full space-y-4 "> 
+        <div className="flex flex-col gap-4 p-4 bg-white rounded-xl h-full space-y-4"> 
           <button
             className={`btn rounded-full ${
               selectedCategory === "All" ? "bg-[#9538E2] text-white " : ""
@@ -29,44 +29,61 @@ const CardBox = () => {
           >
             All Products
           </button>
+          <button 
+            className={`btn rounded-full ${
+              selectedCategory === "Laptops" ? "bg-[#9538E2] text-white" : ""
+            }`}
+            onClick={() => setSelectedCategory("Laptops")}
+          >
+            Laptops 
+          </button>
           <button
             className={`btn rounded-full ${
-              selectedCategory === "Smartphones"
+              selectedCategory === "Phones"
                 ? "bg-[#9538E2] text-white"
                 : ""
             }`}
-            onClick={() => setSelectedCategory("Smartphones")}
+            onClick={() => setSelectedCategory("Phones")}
           >
-            Smartphones
+            Phones
           </button>
           <button
             className={`btn rounded-full ${
-              selectedCategory === "Cameras" ? "bg-[#9538E2] text-white" : ""
+              selectedCategory === "Accessories" ? "bg-[#9538E2] text-white" : ""
             }`}
-            onClick={() => setSelectedCategory("Cameras")}
+            onClick={() => setSelectedCategory("Accessories")}
           >
-            Cameras
+            Accessories
           </button>
           <button
             className={`btn rounded-full ${
-              selectedCategory === "Audio Devices"
+              selectedCategory === "Smartwatch"
                 ? "bg-[#9538E2] text-white"
                 : ""
-            }`}
-            onClick={() => setSelectedCategory("Audio Devices")}
-          >
-            Audio
-          </button>
-          <button
-            className={`btn rounded-full ${
-              selectedCategory === "Smartwatch" ? "bg-[#9538E2] text-white" : ""
             }`}
             onClick={() => setSelectedCategory("Smartwatch")}
           >
             Smartwatch
           </button>
+          <button 
+            className={`btn rounded-full ${
+              selectedCategory === "MacBook" ? "bg-[#9538E2] text-white" : ""
+            }`}
+            onClick={() => setSelectedCategory("MacBook")}
+          >
+            MacBook
+          </button>
+          <button 
+            className={`btn rounded-full ${
+              selectedCategory === "Iphone" ? "bg-[#9538E2] text-white" : ""
+            }`}
+            onClick={() => setSelectedCategory("Iphone")}
+          >
+            Iphone
+          </button>  
+          
         </div>
-        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        <div className="grid  grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-full">
           {filteredGadgets.length > 0 ? (
             filteredGadgets.map((gadget) => (
               <Gadget key={gadget.id} gadget={gadget} />
