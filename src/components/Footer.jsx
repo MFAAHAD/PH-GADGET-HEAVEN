@@ -28,6 +28,9 @@ const Footer = () => {
             <a className="link link-hover">Cookie policy</a>
           </div>
         </footer>
+        <div className=' w-full  border-t-2 border-gray-300 mt-8 text-black font-semibold text-center mb-3 '>
+                <small >@2024 M FAHAD Reserved All Rights.</small>
+            </div>
       </div>
     </>
   );
