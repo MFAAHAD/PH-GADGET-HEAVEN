@@ -38,7 +38,7 @@
   {
     "id": "3",
     "title": "Samsung Galaxy Z Fold 5",
-    "image": "https://i.ibb.co.com/d4VNqRt/galaxy-z-fold5-highlights-colors-phantom-black-mo.jpg",
+    "image": "https://i.ibb.co.com/fQBW7J2/5edf50bc3f20dfd6cd92f40a90fdd03a-jpg-960x960q80-jpg.webp",
     "category": "Phones",
     "price": 899.99,
     "description": "A sleek smartphone with powerful performance and excellent low-light camera.",
@@ -56,7 +56,7 @@
   {
     "id": "4",
     "title": "OnePlus 11 5G",
-    "image": "https://i.ibb.co.com/HCGY30H/One-Plus-11-5-G-Sports-a-Big-Black-Hole-Styled-Hasselblad-Camera-Bump.jpg",
+    "image": "https://i.ibb.co.com/0FrGSJY/images-global-appear-phone-green-1-jpg.webp",
     "category": "Phones",
     "price": 699.99,
     "description": "Affordable smartphone with excellent battery life and decent performance.",
@@ -74,7 +74,7 @@
   {
     "id": "5",
     "title": "Samsung Galaxy Z Flip 5",
-    "image": "https://i.ibb.co.com/y0cBrdG/m-123.png",
+    "image": "https://i.ibb.co.com/fGC7jnp/961aa050-379b-11ee-bffd-fbc62c29b75d.jpg",
     "category": "Phones",
     "price": 1049.99,
     "description": "High-end smartphone with advanced features and a stunning display.",
@@ -92,7 +92,7 @@
   {
     "id": "6",
     "title": "Google Pixel 8 Pro",
-    "image": "https://i.ibb.co.com/CVrgLdL/9aa762ec1eb474a2be5846756b9c5a21.jpg",
+    "image": "https://i.ibb.co.com/mGtbhvp/Pixel-8-Pro.jpg",
     "category": "Phones",
     "price": 549.99,
     "description": "Compact smartphone with a high-quality display and solid performance.",
@@ -110,7 +110,7 @@
   {
     "id": "7",
     "title": "OnePlus 9",
-    "image": "https://oasis.opstatics.com/content/dam/oasis/page/2021/9-series/spec-image/9-pro/Pine%20green-gallery..png",
+    "image": "https://i.ibb.co.com/fr5qnMs/nr-hero-One-Plus9-Flagships-3-22-21.jpg",
     "category": "Phones",
     "price": 750.99,
     "description": "Large display smartphone with dual SIM support and great battery life.",
@@ -128,7 +128,7 @@
   {
     "id": "8",
     "title": "Nikon D3500",
-    "image": "https://i.ibb.co.com/3TpzL3S/16-06-2023-best-dslr-camera-23443226.webp",
+    "image": "https://i.ibb.co.com/WW4rYGW/Niko-D3500-lead.jpg",
     "category": "Accessories",
     "price": 499.99,
     "description": "DSLR camera with high resolution and great performance in low light.",
@@ -146,7 +146,7 @@
   {
     "id": "9",
     "title": "Canon EOS 80D",
-    "image": "https://i.ibb.co.com/Qppk3Qq/pngtree-man-holds-up-a-canon-dslr-camera-image-2509959.jpg",
+    "image": "https://i.ibb.co.com/ZSkrC55/Canon-80-D-Blog-Cover.webp",
     "category": "Accessories",
     "price": 699.99,
     "description": "Compact digital camera with powerful zoom and easy-to-use controls.",
@@ -163,8 +163,8 @@
   },
   {
     "id": "10",
-    "title": "Dell Inspiron",
-    "image": "https://i.ibb.co.com/LhJqk00/dell-inspiron-15-3530-13th-gen-intel-core-i3-11704867341.webp",
+    "title": "Dell Inspiron 15 ",
+    "image": "https://i.ibb.co.com/gyNx2Wb/6573731cv3d.jpg",
     "category": "Laptops",
     "price": 1000,
     "description": "Dell Inspiron 3520 Affordable laptop with Intel Core i3, 15.6 display, and reliable performance.",
@@ -182,7 +182,7 @@
   {
     "id": "11",
     "title": "MacBook Air M2",
-    "image": "https://www.apple.com/newsroom/images/product/mac/standard/Apple-MacBook-Pro-M2-Pro-and-M2-Max-hero-230117.jpg.news_app_ed.jpg",
+    "image": "https://i.ibb.co.com/frHSbBH/211025072623-macbook-pro-14-display-5-1-1000x600.jpg",
     "category": "MacBook",
     "price": 1300,
     "description": "MacBook Air M2, a powerful yet ultra-light laptop with Apple's M2 chip, stunning Retina display, and all-day battery life.",

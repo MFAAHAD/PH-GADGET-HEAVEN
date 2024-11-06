@@ -88,16 +88,16 @@ const DashBoard = () => {
         <div className="space-x-4">
           <button
             onClick={() => setShowCart(true)}
-            className={`btn rounded-full ${
-              showCart ? "bg-[#9538E2] text-white" : "bg-white"
+            className={`btn rounded-full md:px-10 ${
+              showCart ? " bg-white text-purple-600" : "bg-[#9538E2]"
             }`}
           >
             Cart
           </button>
           <button
             onClick={() => setShowCart(false)}
-            className={`btn rounded-full ${
-              !showCart ? "bg-[#9538E2] text-white" : "bg-white"
+            className={`btn rounded-full md:px-10 ${
+              !showCart ? "bg-white text-purple-600" : "bg-[#9538E2]"
             }`}
           >
             Wish List
